@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+
+        <div class="content">
+            <div class="left-block">
+                <div class="input-text">
+                    <label for="input">Ingrese el texto aquí:</label>
+                    <input type="text" id="input" placeholder="Escribe tu mensaje...">
+                    <p class="info">Solo letras minúsculas y sin acentos.</p>
+                    <div class="button-container">
+                        <button id="encrypt-btn">Encriptar</button>
+                        <button id="decrypt-btn">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right-block">
+                <div class="message" id="message">
+                    <img src="img/mensaje.png" alt="Mensaje">
+                    <p id="result">Ningún mensaje fue encontrado.</p>
+                    <p class="small-text">Ingrese el texto que desea encriptar o desencriptar.</p>
+                    <button id="copy-btn" style="display: none;">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
